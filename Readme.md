@@ -21,6 +21,11 @@ Persona 1:
 - อาชีพ: นักศึกษาปี 2  
 - ความต้องการ: ต้องการแอพจัดการสินค้าโดยใช้มือถือในการตรวจสอบ
 
+Persona 2:  
+- ชื่อ: แมว  
+- อายุ: 26 ปี  
+- อาชีพ: ขายของ 
+- ความต้องการ: ต้องการแอพจัดการสินค้าไปใช้จดจำของในร้าน
 
 1.2 เป้าหมายของแอป | App Goals
 ตัวอย่าง (Example):
@@ -42,11 +47,12 @@ Persona 1:
   
 ![45691_0](https://github.com/user-attachments/assets/b63ab1ac-af34-4b28-83f7-4f646c36808b)
 
-- เพิ่มสินค้า
+- เพิ่มสินค้า ชื่อสินค้า จำนวนสินค้า ราคาต้นทุน ราคาขาย
 
 ![45693_0](https://github.com/user-attachments/assets/ff441b6a-9a8a-48f0-a68b-7b1609f12b36)
 
 - จำนวนสินค้าที่ขายออก
+- รีเซ็ตบันทึกการขาย
 
 
 1.4 การไหลของผู้ใช้งาน | User Flow
@@ -123,30 +129,25 @@ Prompt ที่ใช้:
 ผลลัพธ์:  
 ได้ไอเดียแอปจัดการสินค้า
 
-5.2 ใช้ AI ช่วยออกแบบ UI | UI Layout Prompt
+5.2 ใช้ AI ช่วยเขียนโค้ด | Code Writing Prompt
 Prompt ที่ใช้:  
-"Design a simple layout for a schedule and reminder app in Flutter."
+"After logging in, go to the home page to view a summary of your product list, inventory (user defined), cost price, and selling price. There is a shortcut to the "Add Product" page related to SmartStock."
 
 ผลลัพธ์:  
-ได้ code structure ของ Scaffold 3 หน้า
-5.3 ใช้ AI ช่วยเขียนโค้ด | Code Writing Prompt
+ได้ code structure ของ SmartStock 3 หน้า
+
+5.3 ใช้ AI ช่วย debug | Debug Prompt
 Prompt ที่ใช้:  
-"Flutter code to create a ListView with editable schedule items."
+"When I press to reduce the quantity of products that add, the data does not enter the total sales."
 
 ผลลัพธ์:  
-นำไปปรับกับ logic ของแอป เพิ่มปุ่มแก้ไข
-5.4 ใช้ AI ช่วย debug | Debug Prompt
+AI แนะนำวิธีแก้ไขให้
+5.4 ใช้ AI ช่วย Deploy | Deployment Prompt
 Prompt ที่ใช้:  
-"My Flutter app crashes when I try to add an item. Here's the error: [แนบ error log]"
+"ทำเป็น APK ยังไง"
 
 ผลลัพธ์:  
-AI แนะนำให้ตรวจสอบ null และวิธีแก้ไข
-5.5 ใช้ AI ช่วย Deploy | Deployment Prompt
-Prompt ที่ใช้:  
-"How to build Flutter app as APK and test on Android?"
-
-ผลลัพธ์:  
-คำสั่ง flutter build apk --release พร้อมวิธีติดตั้ง
+ให้ npx eas build --platform android --profile preview มา
 
 ✅ Checklist ก่อนส่ง | Final Checklist
 [x] กรอกข้อมูลครบทุก Section
