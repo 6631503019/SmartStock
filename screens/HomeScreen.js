@@ -98,6 +98,14 @@ export default function HomeScreen({ navigation, route }) {
     const handleSaveEdit = () => {
         if (!editingProduct) return;
 
+        if (editingProduct.costPrice >= editingProduct.sellingPrice) {
+            Alert.alert(
+                'Invalid Prices',
+                'Cost Price must be less than Selling Price.'
+            );
+            return;
+        }
+
         setProducts(prevProducts =>
             prevProducts.map(product =>
                 product.id === editingProduct.id ? editingProduct : product
@@ -129,7 +137,7 @@ export default function HomeScreen({ navigation, route }) {
                     <Text style={styles.summaryValue}>{products.length}</Text>
                 </View>
                 <View style={styles.summaryCard}>
-                    <Text style={styles.summaryTitle}>Total Inventory Value</Text>
+                    <Text style={styles.summaryTitle}>Total Products Value</Text>
                     <Text style={styles.summaryValue}>${calculateTotalValue()}</Text>
                 </View>
                 <View style={styles.summaryCard}>
