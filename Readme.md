@@ -77,6 +77,7 @@ Checklist:
 - [x] ประวัติสินค้าที่ขายออกไป
 - [x] ลบประวัติสินค้าที่ขายออกไป
 - [ ] ซิงก์กับ Firebase
+
 2.3 ภาพหน้าจอแอป | App Screenshots
 แนบภาพหรือ URL (Attach images or image links):
 
