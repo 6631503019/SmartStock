@@ -151,6 +151,9 @@ Prompt ที่ใช้:
 ให้ npx eas build --platform android --profile preview มา
 
 ✅ Checklist ก่อนส่ง | Final Checklist
+
 [x] กรอกข้อมูลครบทุก Section
+
 [x] แนบ GitHub และไฟล์ติดตั้ง
+
 [x] สะท้อนผล และใช้ AI อย่างมีเหตุผล
