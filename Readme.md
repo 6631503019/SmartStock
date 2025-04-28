@@ -3,7 +3,7 @@
 ชื่อแอป (App Name): SmartStock
 Framework ที่ใช้ (Framework Used): React Native
 ลิงก์ GitHub Repository: [https://github.com/6631503019/SmartStock.git]
-ลิงก์ไฟล์ติดตั้ง (APK/IPA): [https://expo.dev/accounts/6631503019/projects/SmartStock/builds/25739ce4-268c-4466-9174-d5a8469f5e32]
+ลิงก์ไฟล์ติดตั้ง (APK/IPA): [https://expo.dev/accounts/6631503019/projects/SmartStock/builds/5a9e960d-f8c7-4827-a865-a0fb1208ec24]
 
 1. การออกแบบแอป | App Concept and Design (2 คะแนน / 2 pts)
 1.1 ผู้ใช้งานเป้าหมาย | User Personas
