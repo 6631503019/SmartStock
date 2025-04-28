@@ -95,7 +95,7 @@ export default function HomeScreen({ navigation, route }) {
         setEditingProduct({ ...product });
     };
 
-    const handleSaveEdit = () => {
+    const handleSaveEdit = async () => {
         if (!editingProduct) return;
 
         if (editingProduct.costPrice >= editingProduct.sellingPrice) {
@@ -106,11 +106,11 @@ export default function HomeScreen({ navigation, route }) {
             return;
         }
 
-        setProducts(prevProducts =>
-            prevProducts.map(product =>
-                product.id === editingProduct.id ? editingProduct : product
-            )
+        const updatedProducts = products.map(product =>
+            product.id === editingProduct.id ? editingProduct : product
         );
+        setProducts(updatedProducts);
+        await saveData('products', updatedProducts);
         setEditingProduct(null);
     };
 
@@ -202,22 +202,41 @@ export default function HomeScreen({ navigation, route }) {
                             <View style={styles.productDetails}>
                                 <View style={styles.quantityContainer}>
                                     <Text style={styles.quantityLabel}>Quantity:</Text>
-                                    <View style={styles.quantityControls}>
-                                        <TouchableOpacity
-                                            style={[styles.quantityButton, product.inventory <= 0 && styles.disabledButton]}
-                                            onPress={() => handleEditQuantity(product.id, product.inventory - 1)}
-                                            disabled={product.inventory <= 0}
-                                        >
-                                            <Text style={styles.quantityButtonText}>-</Text>
-                                        </TouchableOpacity>
-                                        <Text style={styles.quantityValue}>{product.inventory}</Text>
-                                        <TouchableOpacity
-                                            style={styles.quantityButton}
-                                            onPress={() => handleEditQuantity(product.id, product.inventory + 1)}
-                                        >
-                                            <Text style={styles.quantityButtonText}>+</Text>
-                                        </TouchableOpacity>
-                                    </View>
+                                    {editingProduct && editingProduct.id === product.id ? (
+                                        <View style={styles.quantityControls}>
+                                            <TouchableOpacity
+                                                style={[styles.quantityButton, editingProduct.inventory <= 0 && styles.disabledButton]}
+                                                onPress={() => setEditingProduct({ ...editingProduct, inventory: Math.max(0, editingProduct.inventory - 1) })}
+                                                disabled={editingProduct.inventory <= 0}
+                                            >
+                                                <Text style={styles.quantityButtonText}>-</Text>
+                                            </TouchableOpacity>
+                                            <Text style={styles.quantityValue}>{editingProduct.inventory}</Text>
+                                            <TouchableOpacity
+                                                style={styles.quantityButton}
+                                                onPress={() => setEditingProduct({ ...editingProduct, inventory: editingProduct.inventory + 1 })}
+                                            >
+                                                <Text style={styles.quantityButtonText}>+</Text>
+                                            </TouchableOpacity>
+                                        </View>
+                                    ) : (
+                                        <View style={styles.quantityControls}>
+                                            <TouchableOpacity
+                                                style={[styles.quantityButton, product.inventory <= 0 && styles.disabledButton]}
+                                                onPress={() => handleEditQuantity(product.id, product.inventory - 1)}
+                                                disabled={product.inventory <= 0}
+                                            >
+                                                <Text style={styles.quantityButtonText}>-</Text>
+                                            </TouchableOpacity>
+                                            <Text style={styles.quantityValue}>{product.inventory}</Text>
+                                            <TouchableOpacity
+                                                style={styles.quantityButton}
+                                                onPress={() => handleEditQuantity(product.id, product.inventory + 1)}
+                                            >
+                                                <Text style={styles.quantityButtonText}>+</Text>
+                                            </TouchableOpacity>
+                                        </View>
+                                    )}
                                 </View>
                                 {editingProduct && editingProduct.id === product.id ? (
                                     <>
