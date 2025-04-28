@@ -87,13 +87,19 @@ Checklist:
 
 
 3. การ Build และติดตั้งแอป | Deployment (2 คะแนน / 2 pts)
+
 3.1 ประเภท Build | Build Type
+
 [x] Debug
 [ ] Release
+
 3.2 แพลตฟอร์มที่ทดสอบ | Platform Tested
+
 [x] Android
 [ ] iOS
+
 3.3 ไฟล์ README และวิธีติดตั้ง | README & Install Guide
+
 แนบไฟล์หรือคำอธิบายการติดตั้งแอป | Insert steps
 
 1. ดาวน์โหลดไฟล์ .apk
@@ -101,13 +107,16 @@ Checklist:
 3. ติดตั้งผ่าน File Manager
 
 การสะท้อนผลลัพธ์ | Reflection (2 คะแนน / 2 pts)
+
 ตัวอย่างหัวข้อ | Suggested points:
 
 - พบปัญหาเวลาใช้ async function
 - หากมีเวลา จะเพิ่มฟีเจอร์ Firebase sync
 
 5. การใช้ AI ช่วยพัฒนา | AI Assisted Development (Bonus / ใช้ประกอบการพิจารณา)
+
 5.1 ใช้ AI ช่วยคิดไอเดีย | Idea Generation
+
 Prompt ที่ใช้:  
 "Suggest mobile app ideas for managing inventory in stores"
 
