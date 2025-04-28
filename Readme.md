@@ -43,6 +43,7 @@ Persona 1:
 ![45691_0](https://github.com/user-attachments/assets/b63ab1ac-af34-4b28-83f7-4f646c36808b)
 
 - เพิ่มสินค้า
+
 ![45693_0](https://github.com/user-attachments/assets/ff441b6a-9a8a-48f0-a68b-7b1609f12b36)
 
 - จำนวนสินค้าที่ขายออก
