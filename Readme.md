@@ -31,11 +31,16 @@ Persona 1:
 - บอกกำไรจากราคาขายที่ตั้งไว้
 - เพิ่มสินค้า
 - โชว์ชื่อสินค้า ต้นทุน ราคาขาย แก้ไขสินค้า ลบสินค้า
+  ![45691_0](https://github.com/user-attachments/assets/b63ab1ac-af34-4b28-83f7-4f646c36808b)
+  - เพิ่มสินค้า
+  ![45693_0](https://github.com/user-attachments/assets/ff441b6a-9a8a-48f0-a68b-7b1609f12b36)
+- จำนวนสินค้าที่ขายออก
+
 
 1.4 การไหลของผู้ใช้งาน | User Flow
-ตัวอย่าง (Example): login/register > Home > 
+ตัวอย่าง (Example): login/register > Home > Select "Add Product"
 
-เปิดแอป > ล็อกอิน-สมัคร > เข้าหน้าโฮม > เลือก "เพิ่มสินค้า" > บันทึก > ตั้งเตือน
+เปิดแอป > ล็อกอิน-สมัคร > เข้าหน้าโฮม > เลือก "เพิ่มสินค้า" 
 2. การพัฒนาแอป | App Implementation (4 คะแนน / 4 pts)
 2.1 รายละเอียดการพัฒนา | Development Details
 เครื่องมือที่ใช้ / Tools used:
@@ -43,7 +48,7 @@ Persona 1:
 - react: 18.3.1
 - react-native: 0.76.9
 - expo: ~52.0.46
-- Package: Provider, SharedPreferences
+
 2.2 ฟังก์ชันที่พัฒนา | Features Implemented
 Checklist:
 
@@ -53,10 +58,14 @@ Checklist:
 - [ ] ซิงก์กับ Firebase
 2.3 ภาพหน้าจอแอป | App Screenshots
 แนบภาพหรือ URL (Attach images or image links):
+![45697_0](https://github.com/user-attachments/assets/c66f36b6-e602-4500-8a61-fb1bdb2b3530)
+![45696_0](https://github.com/user-attachments/assets/279bc6ca-70d9-4f16-9740-e4185a09417b)
+![45690_0](https://github.com/user-attachments/assets/c54029c3-eb4d-4e19-9578-bd86da752705)
+![45691_0](https://github.com/user-attachments/assets/cc045c7c-31e3-4752-80b1-2526ac3b556c)
+![45693_0](https://github.com/user-attachments/assets/973eb2da-eb7b-4511-b2a9-9a7de8ce4a6c)
 
-- ![Dashboard](dashboard.png)
-- ![Schedule](schedule.png)
-- ![Reminder](reminder.png)
+
+
 3. การ Build และติดตั้งแอป | Deployment (2 คะแนน / 2 pts)
 3.1 ประเภท Build | Build Type
 [x] Debug
@@ -70,12 +79,13 @@ Checklist:
 1. ดาวน์โหลดไฟล์ .apk
 2. เปิดในอุปกรณ์ Android
 3. ติดตั้งผ่าน File Manager
-4. การสะท้อนผลลัพธ์ | Reflection (2 คะแนน / 2 pts)
+
+การสะท้อนผลลัพธ์ | Reflection (2 คะแนน / 2 pts)
 ตัวอย่างหัวข้อ | Suggested points:
 
-- พบปัญหาเวลาใช้ setState กับ async function
-- เรียนรู้การใช้ Provider ในการจัดการสถานะ
-- หากมีเวลา จะเพิ่มฟีเจอร์ login และ Firebase sync
+- พบปัญหาเวลาใช้ async function
+- หากมีเวลา จะเพิ่มฟีเจอร์ Firebase sync
+
 5. การใช้ AI ช่วยพัฒนา | AI Assisted Development (Bonus / ใช้ประกอบการพิจารณา)
 5.1 ใช้ AI ช่วยคิดไอเดีย | Idea Generation
 Prompt ที่ใช้:  
