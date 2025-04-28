@@ -1,11 +1,17 @@
 ชื่อ - นามสกุล (Full Name): Thiwakorn Boayairuksa
+
 รหัสนักศึกษา (Student ID): 6631503019
+
 ชื่อแอป (App Name): SmartStock
+
 Framework ที่ใช้ (Framework Used): React Native
+
 ลิงก์ GitHub Repository: [https://github.com/6631503019/SmartStock.git]
+
 ลิงก์ไฟล์ติดตั้ง (APK/IPA): [https://expo.dev/accounts/6631503019/projects/SmartStock/builds/5a9e960d-f8c7-4827-a865-a0fb1208ec24]
 
 1. การออกแบบแอป | App Concept and Design (2 คะแนน / 2 pts)
+
 1.1 ผู้ใช้งานเป้าหมาย | User Personas
 ตัวอย่าง (Example):
 
@@ -25,23 +31,31 @@ Persona 1:
 - 
 1.3 โครงร่างหน้าจอ / Mockup
 ใส่รูปภาพ หรือคำอธิบายแต่ละหน้าหลัก 3 หน้า | Attach image or describe 3 main pages
+
 ![45690_0](https://github.com/user-attachments/assets/98b185dc-8e21-450e-84da-d2af5735c25a)
+
 - บอกจำนวนรายการสินค้า
 - บอกราคาต้นทุนสินค้าทั้งหมด
 - บอกกำไรจากราคาขายที่ตั้งไว้
 - เพิ่มสินค้า
 - โชว์ชื่อสินค้า ต้นทุน ราคาขาย แก้ไขสินค้า ลบสินค้า
-  ![45691_0](https://github.com/user-attachments/assets/b63ab1ac-af34-4b28-83f7-4f646c36808b)
-  - เพิ่มสินค้า
-  ![45693_0](https://github.com/user-attachments/assets/ff441b6a-9a8a-48f0-a68b-7b1609f12b36)
+  
+![45691_0](https://github.com/user-attachments/assets/b63ab1ac-af34-4b28-83f7-4f646c36808b)
+
+- เพิ่มสินค้า
+![45693_0](https://github.com/user-attachments/assets/ff441b6a-9a8a-48f0-a68b-7b1609f12b36)
+
 - จำนวนสินค้าที่ขายออก
 
 
 1.4 การไหลของผู้ใช้งาน | User Flow
+
 ตัวอย่าง (Example): login/register > Home > Select "Add Product"
 
 เปิดแอป > ล็อกอิน-สมัคร > เข้าหน้าโฮม > เลือก "เพิ่มสินค้า" 
+
 2. การพัฒนาแอป | App Implementation (4 คะแนน / 4 pts)
+
 2.1 รายละเอียดการพัฒนา | Development Details
 เครื่องมือที่ใช้ / Tools used:
 
@@ -58,10 +72,15 @@ Checklist:
 - [ ] ซิงก์กับ Firebase
 2.3 ภาพหน้าจอแอป | App Screenshots
 แนบภาพหรือ URL (Attach images or image links):
+
 ![45697_0](https://github.com/user-attachments/assets/c66f36b6-e602-4500-8a61-fb1bdb2b3530)
+
 ![45696_0](https://github.com/user-attachments/assets/279bc6ca-70d9-4f16-9740-e4185a09417b)
+
 ![45690_0](https://github.com/user-attachments/assets/c54029c3-eb4d-4e19-9578-bd86da752705)
+
 ![45691_0](https://github.com/user-attachments/assets/cc045c7c-31e3-4752-80b1-2526ac3b556c)
+
 ![45693_0](https://github.com/user-attachments/assets/973eb2da-eb7b-4511-b2a9-9a7de8ce4a6c)
 
 
@@ -93,6 +112,7 @@ Prompt ที่ใช้:
 
 ผลลัพธ์:  
 ได้ไอเดียแอปจัดการสินค้า
+
 5.2 ใช้ AI ช่วยออกแบบ UI | UI Layout Prompt
 Prompt ที่ใช้:  
 "Design a simple layout for a schedule and reminder app in Flutter."
@@ -117,3 +137,8 @@ Prompt ที่ใช้:
 
 ผลลัพธ์:  
 คำสั่ง flutter build apk --release พร้อมวิธีติดตั้ง
+
+✅ Checklist ก่อนส่ง | Final Checklist
+[x] กรอกข้อมูลครบทุก Section
+[x] แนบ GitHub และไฟล์ติดตั้ง
+[x] สะท้อนผล และใช้ AI อย่างมีเหตุผล
